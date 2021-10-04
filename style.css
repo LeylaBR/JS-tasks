@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: none;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.arrow {
+  font-size: 30px;
+  color: red;
+}
+
+.arrow:hover {
+  color: blue;
+}
+
+.slider__container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.slider {
+  margin: 0 20px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.slider__list {
+  display: flex;
+  width: max-content;
+  transform: translateX(0px);
+  transition: transform 0.5s;
+}
+
+.slider__item {
+  border: 1px solid;
+  background: yellow;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.container {
+  padding: 50px 39px;
+  text-align: center;
+}
+
+.container p {
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 9px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: skyblue;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  /* display: none; */
+}
+
+.overlay__container {
+  position: relative;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background: #d00;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.text {
+  width: 400px;
+  background: #444;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+}
+
+.block__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.block__controls-number {
+  margin-right: 10px;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #000;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
